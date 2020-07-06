@@ -1,5 +1,10 @@
 # cocos-awesome
-cocos是一款挺棒的游戏引擎，我在这个仓库实现一些游戏当中比较使用的功能模块，对应的一个功能一个场景，用的引擎版本是`v2.3.0`，实现的思路在`doc`目录中。
+
+![](https://img.shields.io/badge/cocos%20Creator-%5E2.3.x-brightgreen)
+![](https://img.shields.io/github/last-commit/ifengzp/cocos-awesome)
+![](https://img.shields.io/github/commit-activity/m/ifengzp/cocos-awesome)
+
+cocos是一款挺棒的游戏引擎，我在这个仓库实现一些游戏当中比较使用的功能模块，对应的一个功能一个场景，用的引擎版本是`v2.3.0`，理论上兼容到`v2.3.x`以上，实现的思路在`doc`目录中。
 
 # 目前已实现效果
 
@@ -17,6 +22,7 @@ cocos是一款挺棒的游戏引擎，我在这个仓库实现一些游戏当中
 [背景无限滚动](./doc/Infinite_bg_scroll/背景无限滚动.md)
 [遥控杆](./doc/Joystick/遥控杆.md)
 [马赛克/像素风（shader）](./doc/Mosaic/马赛克像素风.md)
+[渐变过渡的相册（shader）](./doc/Photo_gallery/渐变过渡的相册.md)
 2D换装
 震屏效果+动画恢复第一帧
 
@@ -47,7 +53,7 @@ cocos是一款挺棒的游戏引擎，我在这个仓库实现一些游戏当中
 ## 马赛克/像素风（shader）
 马赛克是一种常用的图像处理手段，主要功能就是使图像模糊，因为这种模糊看上去有一个个的小格子组，便形象的称这种画面为马赛克。当马赛克越来越小的时候，画面呈现出来的效果也叫像素风。
 
-![demo](./doc/Mosaic/resources/demo.png)
+![demo](./doc/Mosaic/resources/demo.gif)
 
 ## 溶解效果（shader）
 物体的淡入淡出是游戏当中很常见的一种状态切换效果，但是有时候我们希望`fade`切换的时候，物体能够能更有色彩层次感或者其他一些特殊的中间状态，这个时候就得自己去写着色器，这种区别于单纯的淡入和淡出的效果可以形象地叫做溶解。
@@ -101,9 +107,13 @@ cocos是一款挺棒的游戏引擎，我在这个仓库实现一些游戏当中
 ![demo](./doc/Infinite_bg_scroll/resourse/Infinite_bg_scroll.gif)
 
 ## 遥控杆
-这是游戏里面很常用的一个功能模块，它就像你的生活，有着走不完的路程。它的实现也很简单，要么做一个很长的背景图，然后移动相机；要么就是实现一个跑马灯，像那些轮播图什么的，大家应该都有写过。
+这是游戏里面很常用的一个功能模块，通过操控遥控杆控制物体的移动
 
 ![Joystick](./doc/Joystick/resourse/Joystick.gif)
 
+## 渐变过渡的相册（shader）
+相册是一个大家比较熟悉的场景，一般我们是实现的都是那种跑马灯式的轮播相册，这里异名给大家提供一个利用shader实现图片渐变过渡的相册思路
+
+![渐变过渡的相册](./doc/Photo_gallery/resources/demo.gif)
 
 
